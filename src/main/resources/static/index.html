@@ -1,0 +1,79 @@
+<!DOCTYPE>
+<html>
+	<head>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+	<link href="index.css" rel="stylesheet">
+	<link href="loading.css" rel="stylesheet">
+	<script src="index.js?v=1"></script>
+	</head>
+		<body>
+			<div class="container py-5 px-1">
+
+			  <header class="text-center py-5">
+				<h1 class="display-4 text-white">Freudian Help</h1>
+				<p class="text-white lead mb-0">A friendly chat if you want to discuss with anyone</p>
+			  </header>
+
+			  <div class="row rounded-lg overflow-hidden shadow">
+				<!-- Users box-->
+				<div class="col-5 px-0">
+				  <div class="bg-white">
+
+					<div class="bg-gray px-4 py-2 bg-light">
+					  <p class="h5 mb-0 py-1">Now</p>
+					</div>
+
+					<div class="messages-box">
+					  <div class="list-group rounded-0">
+
+						<a class="list-group-item list-group-item-action active text-white rounded-0">
+						  <div class="media"><img src="https://bootstrapious.com/i/snippets/sn-chat/avatar.svg" alt="user" width="50" class="rounded-circle">
+							<div class="media-body ml-4">
+							  <div class="d-flex align-items-center justify-content-between mb-1">
+								<h6 class="mb-0">Sigmund Freud</h6><small class="small font-weight-bold" id="date-conv">25 Dec</small>
+							  </div>
+							  <p class="font-italic mb-0 text-small">Ready to listen to your problems and issues.</p>
+							</div>
+						  </div>
+						</a>
+
+					  </div>
+					</div>
+				  </div>
+				</div>
+				<!-- Chat Box-->
+				<div class="col-7 px-0">
+				  <div class="px-4 py-5 chat-box bg-white" id="chat-box">
+
+					<!-- Receiver Message-->
+					<div class="media w-50 ml-auto mb-3">
+					  <div class="media-body">
+						<div class="bg-primary rounded py-2 px-3 mb-2">
+						  <p class="text-medium mb-0 text-white">Welcome, how may I be of help?</p>
+						</div>
+						<p class="small text-muted" id="first-message"></p>
+					  </div>
+					</div>
+					<div id="focal"></div>
+
+				  </div>
+
+				  <!-- Typing area -->
+				  <form action="#" class="bg-light">
+					<div class="input-group">
+					  <input type="text" id="input-value" placeholder="Type a message" aria-describedby="button-addon2" class="form-control rounded-0 border-0 py-3 bg-light">
+					  <div class="input-group-append">
+						<button id="button-addon2" type="submit" onclick="submitInput()" class="btn btn-link"> <i class="fa fa-paper-plane"></i></button>
+					  </div>
+					</div>
+				  </form>
+
+				</div>
+			  </div>
+			</div>
+
+		</body>
+</html>
